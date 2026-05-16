@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #121213;
+    color: white;
+    margin-top: 50px;
+}
+
+#tablero {
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.fila {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5px;
+}
+
+.casilla {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #3a3a3c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.controles {
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+    text-transform: uppercase;
+    width: 150px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #538d4e;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+/* Colores de estado */
+.correcto { background-color: #538d4e; border-color: #538d4e; }
+.presente { background-color: #b59f3b; border-color: #b59f3b; }
+.ausente { background-color: #3a3a3c; border-color: #3a3a3c; }

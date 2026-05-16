@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordle Telemática</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Adivina la Palabra</h1>
+    <p>Palabras de 5 letras (Ej: REDES, NUBES, DATOS)</p>
+    <div id="tablero"></div>
+    
+    <div class="controles">
+        <input type="text" id="intento" maxlength="5" autocomplete="off" placeholder="Escribe aquí...">
+        <button onclick="verificarPalabra()">Enviar</button>
+    </div>
+    <p id="mensaje"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
