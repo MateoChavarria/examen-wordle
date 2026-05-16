@@ -16,8 +16,67 @@ Este proyecto consiste en el despliegue de una aplicación web interactiva (Jueg
 
 ## 🚀 Guía de Despliegue en Producción
 
-### Paso 1: Clonar el Repositorio
-En la terminal de su instancia de AWS, ejecute:
+## 1. Clonar el repositorio
+
 ```bash
-git clone [https://github.com/MateoChavarria/examen-wordle.git]
-cd [examen-wordle]
+git clone https://github.com/MiguelH44/Serpiente.git
+```
+
+---
+
+## 2. Entrar al proyecto
+
+```bash
+cd Serpiente
+```
+
+---
+
+## 3. Instalar Docker (si no está instalado)
+
+```bash
+sudo apt update
+sudo apt install docker.io -y
+```
+
+---
+
+## 4. Construir la imagen Docker
+
+```bash
+sudo docker build -t snakepro:v1 .
+```
+
+---
+
+## 5. Ejecutar el contenedor
+
+```bash
+sudo docker run -d -p 80:5000 snakepro:v1
+```
+
+---
+
+# 🌐 Acceso al Servicio
+
+Abrir en el navegador:
+
+```text
+http://IP_PUBLICA
+```
+
+---
+
+# 🔐 Configuración AWS EC2 si estas en aws
+
+Abrir el puerto 80 en el Security Group:
+
+| Tipo | Puerto |
+|---|---|
+| HTTP | 80 |
+
+---
+
+# 👨‍💻 Autor
+
+Mateo Chavarría Cano
