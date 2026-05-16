@@ -19,7 +19,7 @@ Este proyecto consiste en el despliegue de una aplicación web interactiva (Jueg
 ## 1. Clonar el repositorio
 
 ```bash
-git clone https://github.com/MiguelH44/Serpiente.git
+git clone https://github.com/MateoChavarria/examen-wordle
 ```
 
 ---
@@ -27,7 +27,7 @@ git clone https://github.com/MiguelH44/Serpiente.git
 ## 2. Entrar al proyecto
 
 ```bash
-cd Serpiente
+cd examen-wordle
 ```
 
 ---
@@ -36,7 +36,7 @@ cd Serpiente
 
 ```bash
 sudo apt update
-sudo apt install docker.io -y
+sudo apt install docker-compose -y
 ```
 
 ---
@@ -44,7 +44,7 @@ sudo apt install docker.io -y
 ## 4. Construir la imagen Docker
 
 ```bash
-sudo docker build -t snakepro:v1 .
+sudo docker build -t wordle-app .
 ```
 
 ---
@@ -52,7 +52,7 @@ sudo docker build -t snakepro:v1 .
 ## 5. Ejecutar el contenedor
 
 ```bash
-sudo docker run -d -p 80:5000 snakepro:v1
+sudo docker run -d -p 80:5000 wordle-app
 ```
 
 ---
